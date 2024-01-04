@@ -1,0 +1,9 @@
+{
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "backend": "cd backend && npm run start:dev",
+    "heroku-postbuild": "cd frontend && npm i && npm run build && cd .. && cd backend && npm i"
+  }
+}
